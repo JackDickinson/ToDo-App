@@ -22,7 +22,7 @@ const Task = (props) => {
         <MdOutlineCheckCircleOutline />
         </IconContext.Provider>
             
-        }</div> </div> <div className="flex flex-col ml-2"> <span>{task}</span> <span className="text-sm pt-1 text-slate-600">{description}</span></div> <span onClick={()=>removeTask(id)} className="flex flex-1 justify-end"><RiDeleteBinLine /></span> </li>
+        }</div> </div> <div className="flex flex-col ml-2"> <span>{task}</span> <span className="text-sm pt-1 text-slate-600">{description}</span></div> <span onClick={()=>removeTask(id)} className="flex flex-1 justify-end cursor-pointer"><RiDeleteBinLine /></span> </li>
     )
 }
 

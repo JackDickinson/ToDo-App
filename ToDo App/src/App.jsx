@@ -61,8 +61,8 @@ function App() {
   },[tasks])
 
   return (
-    <div className="App h-screen w-screen bg-slate-800 flex justify-center">
-      <div className="bg-slate-300 p-8 max-w-3xl w-full m-auto mx-4 sm:mx-6 rounded-2xl">
+    <div className="App h-screen w-screen flex items-center justify-center">
+      <div className="bg-slate-300 max-w-3xl w-full m-auto rounded-2xl mx-4 p-4 sm:p-8 sm:mx-6">
         <Header />
         <CreateTask addTask={addTask} />
         {isLoading ? <div className='w=full flex justify-center items-center mb-6 gap-2 flex-row-reverse'> <span>Loading tasks...</span>
