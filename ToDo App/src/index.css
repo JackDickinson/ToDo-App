@@ -16,6 +16,6 @@
   transform:translateX(0);
 }
 .item-exit-active {
-  margin-bottom: 0;
+  opacity: 0;
   transition: margin-bottom 400ms;
 } */

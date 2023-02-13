@@ -18,8 +18,9 @@ const TaskList = (props) => {
                 </CSSTransition>
             ))}
         </TransitionGroup>
-            <div className="mt-8 opacity-50">
-                <p>Completed {completedTasks} out of {tasks.length}</p>
+            <div className="mt-8 transition-all duration-700">
+                <p className={`transition-all duration-700 ${tasks.length > 0 ? "opacity-50 h-auto" : "opacity-0 overflow-hidden h-0"}`}>Completed {completedTasks} out of {tasks.length}</p>
+                <p className={`transition-all duration-700 ${tasks.length == 0 ? "opacity-50 h-auto" : "opacity-0 overflow-hidden h-0"}`}>No Tasks</p>
             </div>
         </div>
     )
