@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.item-enter {
+  opacity: 0;
+  transform:translateY(-100%);
+}
+.item-enter-active {
+  opacity: 1;
+  transform:translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+/* .item-exit {
+  opacity: 1;
+  transform:translateX(0);
+}
+.item-exit-active {
+  margin-bottom: 0;
+  transition: margin-bottom 400ms;
+} */

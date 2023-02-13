@@ -14,16 +14,14 @@ function App() {
   const [completedTasks, setCompletedTasks] = useState(0);
 
   const addTask = (task) => {
-    const id = Math.floor(Math.random() * 10000) + 1;
-    console.log(id);
+    const id = Math.floor(Math.random() * 10000) + 10;
     const newTask = { id, ...task };
     setTasks([...tasks, newTask]);
   }
 
   const removeTask = (id) => {
     const newTasksWithRemoval = tasks.filter(function(task) { return task.id != id; }); 
-    setTasks(newTasksWithRemoval
-    );
+    setTasks(newTasksWithRemoval);
   }
 
   const setCompletedCount = () => {
