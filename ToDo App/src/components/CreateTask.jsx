@@ -25,13 +25,13 @@ const addTdodo = (e) => {
 
 return (
     <div className="flex justify-center">
-        <div className="bg-slate-300 p-8 max-w-3xl w-full m-auto rounded-2xl">
+        <div className="bg-slate-300 p-8 w-full m-auto rounded-2xl">
             <form onSubmit={addTdodo} className="flex flex-col">
-                <label htmlFor="task" className="text-slate-800 font-bold">Task</label>
-                <input type="text" name="task" id="task" className="border-2 border-slate-800 rounded-lg p-2 mb-4" />
-                <label htmlFor="description" className="text-slate-800 font-bold">Description</label>
+                <label htmlFor="task" className="text-slate-800 font-bold pb-1">Task</label>
+                <input type="text" name="task" id="task" className="border-2 border-slate-800 rounded-lg p-3 mb-4" />
+                <label htmlFor="description" className="text-slate-800 font-bold pb-1">Description</label>
                 <textarea name="description" id="description" className="border-2 border-slate-800 rounded-lg p-2 mb-4" />
-                <button className="bg-slate-800 text-slate-300 rounded-lg p-2">Create Task</button>
+                <button className="bg-slate-800 text-slate-300 rounded-lg p-3">Create Task</button>
             </form>
         </div>
     </div>
